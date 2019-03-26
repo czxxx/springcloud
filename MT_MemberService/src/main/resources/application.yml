@@ -1,0 +1,21 @@
+eureka:
+ client:
+  serviceUrl:
+    defaultZone: http://localhost:8888/eureka/,http://localhost:8889/eureka/,http://localhost:8890/eureka/
+ instance:
+    #自定义服务名称信息
+    instance-id: service-member-8762
+    #访问路径可以显示IP地址
+    prefer-ip-address: true       
+server:
+ port: 8762
+ address: 0.0.0.0
+spring:
+ application:
+  name: service-member
+info:
+  app.name: atguigu-microservicecloud
+  company.name: www.atguigu.com
+  # <delimit>$</delimit>中设置的符号
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$         

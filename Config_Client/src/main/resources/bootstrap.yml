@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      #需要从GitHub上读取的资源名称，注意没有yml后缀名
+      name:  client-test
+      #本次访问的配置项
+      profile: dev
+      label: master
+      uri: http://localhost:8877/
+server.port: 8881

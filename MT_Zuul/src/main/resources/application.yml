@@ -1,0 +1,29 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/,http://localhost:8889/eureka/,http://localhost:8890/eureka/
+  instance:
+    instance-id: gateway-8769.com
+    prefer-ip-address: true 
+  
+server:
+  port: 8769
+spring:
+  application:
+    name: service-zuul
+zuul:
+  #设置统一前缀
+  prefix: /czx
+  #限制其他路径访问
+  ignored-services: "*"
+  #路由代理
+  routes:
+    api-a:
+      path: /api-member/**
+      service-id: service-member
+    api-b:
+      path: /api-order/**
+      service-id: service-order
+    api-c:
+      path: /api-feign/**
+      service-id: service-order-feign    
