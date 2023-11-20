@@ -60,18 +60,17 @@
 		</plugins>
 	</build>
 	<modules>
-		<module>Eureka_Server</module>
-		<module>MT_Service-Member</module>
-		<module>MT_MemberService</module>
-		<module>MT_OrderService</module>
-		<module>MT_MemberService2</module>
-		<module>MT_Zuul</module>
-		<module>Config_Server</module>
 		<module>Config_Client</module>
-		<module>MT_Feign</module>
+		<module>Config_Server</module>
+		<module>Eureka_Server</module>
 		<module>Eureka_Server2</module>
 		<module>Eureka_Server3</module>
 		<module>Hystrix_Dashboard</module>
+		<module>MT_Feign</module>
+		<module>MT_MemberService</module>
+		<module>MT_MemberService2</module>
 		<module>MT_MemberService3</module>
+		<module>MT_OrderServiceRest</module>
+		<module>MT_Zuul</module>
 	</modules>
 </project>
